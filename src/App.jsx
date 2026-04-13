@@ -48,7 +48,7 @@ function todayStr() {
 
 /* ───────── DAILY SCHEDULE DATA ───────── */
 const schedule = [
-  { time: "5:15 AM", activity: "Wife wakes — strength or pilates (25 min)", icon: "💪", type: "wife" },
+  { time: "5:15 AM", activity: "Wife wakes — Peloton class (20–30 min)", icon: "💪", type: "wife" },
   { time: "5:45 AM", activity: "Wife showers, pumps, gets ready for work", icon: "🚿", type: "wife" },
   { time: "6:00 AM", activity: "You wake up, black coffee or espresso", icon: "☕", type: "you" },
   { time: "6:15 AM", activity: "Baby wakes — diaper, 6oz bottle/nurse, burp, tummy time", icon: "👶", type: "baby" },
@@ -131,82 +131,48 @@ const hisProgram = {
   },
 };
 
-/* ───────── HER STRENGTH PROGRAM ───────── */
-const herStrength = {
-  "Monday — Lower Body Strength": {
-    focus: "Glutes, Quads, Hamstrings — postpartum rebuild",
+/* ───────── HER PELOTON SPRING RESET PROGRAM ───────── */
+const herPeloton = {
+  "Monday — Strength": {
+    focus: "Peloton Spring Reset · Full body strength",
     exercises: [
-      { name: "DB Goblet Squat", sets: "4×12", weight: "25–35 lb", rest: "60s", notes: "Focus on depth and pelvic floor engagement" },
-      { name: "DB Romanian Deadlift", sets: "3×12", weight: "25–30 lb each", rest: "60s", notes: "Hinge from hips, slight knee bend" },
-      { name: "DB Reverse Lunge", sets: "3×10/leg", weight: "20–25 lb each", rest: "45s", notes: "Step back, knee to floor" },
-      { name: "DB Sumo Squat", sets: "3×15", weight: "35 lb", rest: "45s", notes: "Wide stance, toes out, squeeze glutes" },
-      { name: "TRX Hamstring Curl", sets: "3×12", weight: "BW", rest: "45s", notes: "Bridge hips up, curl heels in" },
-      { name: "Glute Bridge Hold", sets: "2×30s", weight: "BW", rest: "—", notes: "Squeeze and hold at top — reconnect glutes" },
+      { name: "Peloton Strength Class", sets: "30 min", notes: "Follow along on Peloton — Spring Reset program" },
     ],
   },
-  "Wednesday — Upper Body Strength": {
-    focus: "Back, Shoulders, Arms — posture correction",
+  "Tuesday — Bike": {
+    focus: "Peloton Spring Reset · Cycling",
     exercises: [
-      { name: "DB Bent-over Row", sets: "4×12", weight: "20–25 lb each", rest: "60s", notes: "Squeeze shoulder blades, fix nursing posture" },
-      { name: "DB Overhead Press", sets: "3×10", weight: "15–20 lb each", rest: "60s", notes: "Seated on bench for core stability" },
-      { name: "TRX Row", sets: "3×12", weight: "BW", rest: "45s", notes: "Walk feet forward to increase difficulty" },
-      { name: "DB Bicep Curl", sets: "3×12", weight: "15 lb each", rest: "45s", notes: "Controlled tempo, no swing" },
-      { name: "TRX Face Pull", sets: "3×15", weight: "BW", rest: "45s", notes: "Opens chest, counteracts hunching" },
-      { name: "Push-ups (knees if needed)", sets: "2×AMRAP", weight: "BW", rest: "—", notes: "Finisher — build to full push-ups over 6 weeks" },
+      { name: "Peloton Bike Class", sets: "30 min", notes: "Follow along on Peloton — Spring Reset program" },
     ],
   },
-  "Friday — Full Body Strength": {
-    focus: "Compound movements + core reconnection",
+  "Wednesday — Core": {
+    focus: "Peloton Spring Reset · Core strength",
     exercises: [
-      { name: "DB Thruster", sets: "3×10", weight: "15–20 lb each", rest: "60s", notes: "Squat to press, one fluid motion" },
-      { name: "DB Single-leg Deadlift", sets: "3×10/leg", weight: "20 lb", rest: "45s", notes: "Balance + hamstring/glute work" },
-      { name: "DB Bench Press", sets: "3×12", weight: "20–25 lb each", rest: "60s", notes: "Flat on foldable bench" },
-      { name: "TRX Plank", sets: "3×30s", weight: "BW", rest: "30s", notes: "Feet in straps, brace core, breathe" },
-      { name: "Dead Bug", sets: "3×10/side", weight: "—", rest: "30s", notes: "Core reconnection — lower back flat" },
-      { name: "Bird Dog", sets: "2×10/side", weight: "—", rest: "—", notes: "Slow and controlled, stabilize pelvis" },
+      { name: "Peloton Core Class", sets: "20 min", notes: "Follow along on Peloton — Spring Reset program" },
     ],
   },
-};
-
-/* ───────── HER PILATES PROGRAM ───────── */
-const herPilates = {
-  "Tuesday — Core Restore": {
-    focus: "Deep core, pelvic floor, diastasis-safe · 20 min",
+  "Thursday — Strength": {
+    focus: "Peloton Spring Reset · Full body strength",
     exercises: [
-      { name: "Diaphragmatic Breathing", sets: "2 min", notes: "Inhale expand ribs, exhale draw belly in gently" },
-      { name: "Pelvic Floor Lifts", sets: "2 min", notes: "Engage on exhale, release on inhale — 10 reps" },
-      { name: "Dead Bug (slow)", sets: "3 min", notes: "Alternate arms/legs, exhale on extension" },
-      { name: "Bird Dog", sets: "3 min", notes: "10/side, hold 2 sec at extension" },
-      { name: "Modified Hundred", sets: "2 min", notes: "Knees at 90°, pump arms, breathe in 5 / out 5" },
-      { name: "Side-lying Clamshell", sets: "3 min", notes: "15/side — glute med activation" },
-      { name: "Glute Bridge March", sets: "3 min", notes: "Hold bridge, alternate lifting knees" },
-      { name: "Cat-Cow Stretch", sets: "2 min", notes: "Slow spinal articulation, release tension" },
+      { name: "Peloton Strength Class", sets: "30 min", notes: "Follow along on Peloton — Spring Reset program" },
     ],
   },
-  "Thursday — Mobility & Tone": {
-    focus: "Flexibility, posture, full body toning · 20 min",
+  "Friday — Bike": {
+    focus: "Peloton Spring Reset · Cycling",
     exercises: [
-      { name: "Roll Down to Forward Fold", sets: "2 min", notes: "Articulate spine one vertebra at a time" },
-      { name: "Single Leg Circle", sets: "3 min", notes: "10 each direction per leg — hip mobility" },
-      { name: "Swimming (prone)", sets: "3 min", notes: "Alternate arm/leg lifts — back strengthening" },
-      { name: "Side Plank (modified)", sets: "3 min", notes: "30s each side × 2 — obliques and stability" },
-      { name: "Inner Thigh Leg Lift", sets: "3 min", notes: "15/side — lying on side, bottom leg lifts" },
-      { name: "Spine Twist (seated)", sets: "2 min", notes: "Rotation with exhale — opens thoracic spine" },
-      { name: "Figure-4 Stretch", sets: "2 min", notes: "90s each side — deep glute/piriformis release" },
-      { name: "Child's Pose + Thread Needle", sets: "2 min", notes: "Wind down — decompress spine" },
+      { name: "Peloton Bike Class", sets: "30 min", notes: "Follow along on Peloton — Spring Reset program" },
     ],
   },
-  "Saturday — Power Pilates": {
-    focus: "Higher intensity, sculpt + cardio burst · 20 min",
+  "Saturday — Pilates or Yoga": {
+    focus: "Weekend recovery · Your choice",
     exercises: [
-      { name: "Pilates Squat Pulse", sets: "2 min", notes: "Narrow stance, 20 pulses + 10 full squats" },
-      { name: "Plank to Pike", sets: "3 min", notes: "Flow between plank and pike, engage abs" },
-      { name: "Pilates Push-up Flow", sets: "3 min", notes: "Roll down, walk out, push-up, walk back, roll up" },
-      { name: "Single Leg Stretch", sets: "3 min", notes: "Classic — alternate legs, shoulders off mat" },
-      { name: "Curtsy Lunge Pulse", sets: "3 min", notes: "15/side — glute sculpt, add DBs if ready" },
-      { name: "Teaser (modified)", sets: "2 min", notes: "Bent knees version — V-sit hold 5 sec × 6" },
-      { name: "Standing Calf Raise + Relevé", sets: "2 min", notes: "20 reps — posture and calf toning" },
-      { name: "Savasana / Deep Breathing", sets: "2 min", notes: "You earned it" },
+      { name: "Peloton Pilates or Yoga", sets: "20–30 min", notes: "Pick whichever feels right — follow along on Peloton" },
+    ],
+  },
+  "Sunday — Pilates or Yoga": {
+    focus: "Weekend recovery · Your choice",
+    exercises: [
+      { name: "Peloton Pilates or Yoga", sets: "20–30 min", notes: "Pick whichever feels right — follow along on Peloton" },
     ],
   },
 };
@@ -814,34 +780,10 @@ export default function App() {
 
   const renderHerTab = () => (
     <div>
-      <div style={{ display: "flex", marginBottom: 16 }}>
-        {["strength", "pilates"].map((sub) => (
-          <button
-            key={sub}
-            onClick={() => {
-              setHerSubTab(sub);
-              setExpandedHerDay(null);
-            }}
-            style={{
-              flex: 1,
-              padding: "10px 0",
-              border: "none",
-              borderRadius: sub === "strength" ? "8px 0 0 8px" : "0 8px 8px 0",
-              background: herSubTab === sub ? T.hers : T.card,
-              color: herSubTab === sub ? "#fff" : T.textSecondary,
-              fontSize: 14,
-              fontWeight: 600,
-              cursor: "pointer",
-              WebkitTapHighlightColor: "transparent",
-            }}
-          >
-            {sub === "strength" ? "Strength (M/W/F)" : "Pilates (T/Th/Sa)"}
-          </button>
-        ))}
+      <div style={{ fontSize: 13, color: T.textCaption, marginBottom: 12, fontWeight: 600 }}>
+        Peloton Spring Reset
       </div>
-      {herSubTab === "strength"
-        ? renderWorkoutProgram(herStrength, "hers", T.hers)
-        : renderWorkoutProgram(herPilates, "hers", T.hers)}
+      {renderWorkoutProgram(herPeloton, "hers", T.hers)}
     </div>
   );
 
@@ -1195,8 +1137,7 @@ export default function App() {
 
     // His workout days mapped to day-of-week
     const hisWorkoutDays = Object.keys(hisProgram);
-    const herStrengthDays = Object.keys(herStrength);
-    const herPilatesDays = Object.keys(herPilates);
+    const herPelotonDays = Object.keys(herPeloton);
 
     // Compute daily stats for a given date
     const getDayStats = (dateStr) => {
@@ -1217,16 +1158,9 @@ export default function App() {
       // Her workout completion
       let hersCompleted = 0;
       let hersTotal = 0;
-      herStrengthDays.forEach((dayName) => {
+      herPelotonDays.forEach((dayName) => {
         const key = `hers_${dayName}`;
-        const exCount = herStrength[dayName].exercises.length;
-        hersTotal += exCount;
-        const arr = dayWorkouts[key] || [];
-        hersCompleted += arr.filter(Boolean).length;
-      });
-      herPilatesDays.forEach((dayName) => {
-        const key = `hers_${dayName}`;
-        const exCount = herPilates[dayName].exercises.length;
+        const exCount = herPeloton[dayName].exercises.length;
         hersTotal += exCount;
         const arr = dayWorkouts[key] || [];
         hersCompleted += arr.filter(Boolean).length;
