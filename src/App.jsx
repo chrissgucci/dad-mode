@@ -200,16 +200,16 @@ const hisMealPlan = {
       { name: "Protein Oats", details: "40g oats, 1 scoop whey, 80g frozen blueberries, 10g almond butter" },
       { name: "Greek Yogurt Bowl", details: "200g nonfat Greek yogurt, 30g Maple Pecan Granola, 80g strawberries, 10g honey" },
     ]},
-    { num: 2, name: "Mid-Morning — 9:15 AM", cals: 200, protein: 30, options: [
+    { num: 2, name: "Mid-Morning — 9:45 AM", cals: 200, protein: 30, options: [
       { name: "Protein Shake", details: "1 scoop whey + 1 banana" },
       { name: "Cottage Cheese Cup", details: "170g lowfat cottage cheese + dried mango" },
     ]},
-    { num: 3, name: "Lunch — 11:00 AM", cals: 450, protein: 45, options: [
+    { num: 3, name: "Lunch — 11:30 AM", cals: 450, protein: 45, options: [
       { name: "Chicken Salad Plate", details: "150g Grilled Chicken Strips, Cruciferous Crunch (half bag), 1/2 avocado, 2 tbsp Green Goddess" },
       { name: "Turkey Wrap", details: "1 tortilla, 120g turkey breast, 30g Unexpected Cheddar, lettuce, mustard, 1 cup Tomato Bisque" },
       { name: "Beef & Rice Bowl", details: "130g 85/15 ground beef (drained), 120g jasmine rice, 50g tomato, 30g Mexican Blend, 2 tbsp salsa, lime" },
     ]},
-    { num: 4, name: "Post-Workout — 12:40 PM", cals: 250, protein: 35, options: [
+    { num: 4, name: "Post-Workout — 12:15 PM", cals: 250, protein: 35, options: [
       { name: "Whey + Rice Cake", details: "1 scoop whey, 2 brown rice cakes, 10g PB" },
       { name: "Chicken Bites", details: "100g leftover chicken breast, 1 small apple" },
     ]},
@@ -217,12 +217,12 @@ const hisMealPlan = {
       { name: "TJ's Snack Plate", details: "2 Turkey Jerky sticks + 15 Inner Peas" },
       { name: "Hard Boiled Eggs", details: "2 hard boiled eggs + everything bagel seasoning" },
     ]},
-    { num: 6, name: "Dinner — 6:45 PM", cals: 450, protein: 45, options: [
+    { num: 6, name: "Dinner — 6:30 PM", cals: 450, protein: 45, options: [
       { name: "Salmon & Veggies", details: "150g salmon, 200g roasted broccoli, 100g steamed lentils" },
       { name: "Turkey Stir-fry", details: "150g ground turkey, 200g stir fry veggies, 2 tbsp Soyaki, 100g jasmine rice" },
       { name: "Chicken & Sweet Potato", details: "150g chicken breast (21 Seasoning Salute), 150g sweet potato, 150g green beans" },
     ]},
-    { num: 7, name: "Evening — 8:00 PM", cals: 120, protein: 20, options: [
+    { num: 7, name: "Evening — 7:30 PM", cals: 120, protein: 20, options: [
       { name: "Greek Yogurt", details: "150g nonfat Greek yogurt + cinnamon" },
       { name: "Cottage Cheese", details: "120g lowfat cottage cheese — skip if protein target hit" },
     ]},
@@ -251,12 +251,12 @@ const herMealPlan = {
       { name: "Chicken & Fruit", details: "80g leftover chicken breast, 80g strawberries, 10g sunflower seeds" },
       { name: "Protein Bar (dairy-free)", details: "1 dairy-free protein bar (RXBAR, GoMacro, etc. ~200 cal, 12g+ protein) + handful of berries" },
     ]},
-    { num: 5, name: "Dinner — 6:45 PM", cals: 500, protein: 38, options: [
+    { num: 5, name: "Dinner — 6:30 PM", cals: 500, protein: 38, options: [
       { name: "Salmon & Veggies", details: "130g salmon, 200g roasted broccoli, 150g steamed lentils, 1 tsp olive oil" },
       { name: "Turkey Stir-fry", details: "130g ground turkey, 200g stir fry veggies, 2 tbsp Soyaki, 150g jasmine rice" },
       { name: "Chicken & Sweet Potato", details: "130g chicken breast, 180g baked sweet potato, 150g green beans" },
     ]},
-    { num: 6, name: "Evening — 8:00 PM", cals: 200, protein: 14, options: [
+    { num: 6, name: "Evening — 7:30 PM", cals: 200, protein: 14, options: [
       { name: "Lactation Oat Bites", details: "2 homemade bites: 60g oats, 30g almond butter, 15g brewer's yeast, 20g honey, 15g flaxseed, 10g dairy-free dark chocolate chips" },
       { name: "Banana + Almond Butter", details: "1 small banana, 15g almond butter, sprinkle of cinnamon and hemp seeds" },
     ]},
