@@ -48,38 +48,52 @@ function todayStr() {
 
 /* ───────── DAILY SCHEDULE DATA ───────── */
 const schedule = [
+  // --- Morning ---
   { time: "5:15 AM", activity: "Wife wakes — Peloton class (20–30 min)", icon: "💪", type: "wife" },
   { time: "5:45 AM", activity: "Wife showers, pumps, gets ready for work", icon: "🚿", type: "wife" },
   { time: "6:00 AM", activity: "You wake up, black coffee or espresso", icon: "☕", type: "you" },
-  { time: "6:15 AM", activity: "Baby wakes — diaper, 6oz bottle/nurse, burp, tummy time", icon: "👶", type: "baby" },
   { time: "6:45 AM", activity: "Wife eats Meal 1 (grab-and-go), heads to work", icon: "🚗", type: "wife" },
-  { time: "7:00 AM", activity: "You eat Meal 1 — Breakfast", icon: "🍳", type: "food" },
+  { time: "7:00 AM", activity: "Baby wakes — diaper, 6oz bottle/nurse, burp, tummy time", icon: "👶", type: "baby" },
+  { time: "7:00 AM", activity: "You eat Meal 1 — Breakfast (while baby feeds)", icon: "🍳", type: "food" },
   { time: "7:30 AM", activity: "Baby play — activity mat, reading, sensory toys", icon: "🧸", type: "baby" },
-  { time: "8:00 AM", activity: "Nap 1 starts — put baby down drowsy but awake", icon: "😴", type: "baby" },
-  { time: "8:10 AM", activity: "Walk #1 — stroller walk, 45–60 min, brisk pace", icon: "🚶", type: "exercise" },
-  { time: "9:15 AM", activity: "Return, prep/eat Meal 2 — Mid-morning snack", icon: "🥤", type: "food" },
+  // --- Nap 1 (1 hr) ---
+  { time: "8:30 AM", activity: "Nap 1 starts — put baby down drowsy but awake", icon: "😴", type: "baby" },
+  { time: "8:40 AM", activity: "Walk #1 — stroller walk, 45–60 min, brisk pace", icon: "🚶", type: "exercise" },
+  // --- Wake window 2 ---
   { time: "9:30 AM", activity: "Baby wakes — diaper, 6oz bottle, burp", icon: "👶", type: "baby" },
+  { time: "9:45 AM", activity: "Meal 2 — Mid-morning snack", icon: "🥤", type: "food" },
   { time: "10:00 AM", activity: "Baby play — jumper, songs, walks around the house", icon: "🧸", type: "baby" },
-  { time: "11:00 AM", activity: "Meal 3 — Lunch", icon: "🥗", type: "food" },
-  { time: "11:30 AM", activity: "Baby shows sleep cues — wind down routine", icon: "👶", type: "baby" },
-  { time: "12:00 PM", activity: "Nap 2 starts — put baby down", icon: "😴", type: "baby" },
-  { time: "12:10 PM", activity: "LIFT (Mon/Tue/Thu/Fri) or rest — 25 min", icon: "🏋️", type: "exercise" },
-  { time: "12:40 PM", activity: "Quick shower, stretch, Meal 4 — Post-workout snack", icon: "🥤", type: "food" },
-  { time: "1:30 PM", activity: "Baby wakes — diaper, 6oz bottle, burp", icon: "👶", type: "baby" },
-  { time: "2:00 PM", activity: "Baby play — outdoor blanket time, stroller errand", icon: "🧸", type: "baby" },
-  { time: "3:00 PM", activity: "Meal 5 — Afternoon snack", icon: "🍎", type: "food" },
-  { time: "3:30 PM", activity: "Baby shows sleep cues — wind down", icon: "👶", type: "baby" },
-  { time: "4:00 PM", activity: "Nap 3 starts — put baby down", icon: "😴", type: "baby" },
+  { time: "11:00 AM", activity: "Baby shows sleep cues — wind down routine", icon: "👶", type: "baby" },
+  // --- Nap 2 (1 hr) ---
+  { time: "11:30 AM", activity: "Nap 2 starts — put baby down", icon: "😴", type: "baby" },
+  { time: "11:30 AM", activity: "Meal 3 — Lunch", icon: "🥗", type: "food" },
+  { time: "11:45 AM", activity: "LIFT (Mon/Tue/Thu/Fri) or rest — 25 min", icon: "🏋️", type: "exercise" },
+  { time: "12:15 PM", activity: "Quick shower, stretch", icon: "🚿", type: "you" },
+  // --- Wake window 3 ---
+  { time: "12:30 PM", activity: "Baby wakes — diaper, 6oz bottle, burp", icon: "👶", type: "baby" },
+  { time: "1:00 PM", activity: "Baby play — outdoor blanket time, stroller errand", icon: "🧸", type: "baby" },
+  { time: "2:00 PM", activity: "Meal 4 — Afternoon snack", icon: "🍎", type: "food" },
+  { time: "2:30 PM", activity: "Baby shows sleep cues — wind down", icon: "👶", type: "baby" },
+  // --- Nap 3 (40 min) ---
+  { time: "3:00 PM", activity: "Nap 3 starts — put baby down (shorter nap)", icon: "😴", type: "baby" },
+  { time: "3:00 PM", activity: "Meal 5 — Snack, prep bottles, light chores", icon: "🥤", type: "food" },
+  // --- Wake window 4 ---
+  { time: "3:40 PM", activity: "Baby wakes — diaper, 6oz bottle, burp", icon: "👶", type: "baby" },
+  { time: "4:00 PM", activity: "Baby play — walk, carrier time, sensory play", icon: "🧸", type: "baby" },
   { time: "4:10 PM", activity: "Walk #2 — stroller or carrier walk, 45–60 min", icon: "🚶", type: "exercise" },
-  { time: "5:15 PM", activity: "Return, start dinner prep", icon: "🔪", type: "food" },
-  { time: "5:30 PM", activity: "Baby wakes — diaper, bottle/nurse when wife home", icon: "👶", type: "baby" },
-  { time: "5:45 PM", activity: "Wife home — nurse baby, change, family walk together", icon: "👨‍👩‍👦", type: "wife" },
-  { time: "6:15 PM", activity: "Family walk — 20–30 min, wife's daily walk", icon: "🚶‍♀️", type: "exercise" },
-  { time: "6:45 PM", activity: "Meal 6 — Dinner together (same meal, different portions)", icon: "🍽️", type: "food" },
-  { time: "7:15 PM", activity: "Baby bath, lotion, pajamas, nurse/final bottle", icon: "🛁", type: "baby" },
-  { time: "7:30 PM", activity: "Baby bedtime — dark room, sound machine, put down", icon: "🌙", type: "baby" },
-  { time: "7:45 PM", activity: "Wife pumps for next day's bottles", icon: "🍼", type: "wife" },
-  { time: "8:00 PM", activity: "Evening snack (both), relax, partner time", icon: "✨", type: "you" },
+  { time: "4:30 PM", activity: "Baby shows sleep cues — wind down", icon: "👶", type: "baby" },
+  // --- Nap 4 (40 min) ---
+  { time: "5:00 PM", activity: "Nap 4 starts — put baby down (catnap)", icon: "😴", type: "baby" },
+  { time: "5:00 PM", activity: "Start dinner prep", icon: "🔪", type: "food" },
+  // --- Evening ---
+  { time: "5:40 PM", activity: "Baby wakes — diaper, bottle/nurse", icon: "👶", type: "baby" },
+  { time: "5:45 PM", activity: "Wife home — nurse baby, change, family time", icon: "👨‍👩‍👦", type: "wife" },
+  { time: "6:00 PM", activity: "Family walk — 20–30 min, wife's daily walk", icon: "🚶‍♀️", type: "exercise" },
+  { time: "6:30 PM", activity: "Meal 6 — Dinner together (same meal, different portions)", icon: "🍽️", type: "food" },
+  { time: "6:45 PM", activity: "Baby bath, lotion, pajamas, nurse/final bottle", icon: "🛁", type: "baby" },
+  { time: "7:00 PM", activity: "Baby bedtime — dark room, sound machine, put down", icon: "🌙", type: "baby" },
+  { time: "7:15 PM", activity: "Wife pumps for next day's bottles", icon: "🍼", type: "wife" },
+  { time: "7:30 PM", activity: "Evening snack (both), relax, partner time", icon: "✨", type: "you" },
   { time: "9:30 PM", activity: "Sleep — recovery is everything", icon: "💤", type: "you" },
 ];
 
